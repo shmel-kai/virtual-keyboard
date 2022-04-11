@@ -118,21 +118,12 @@ body .brown-section header .navigation ul li .active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 62px;
 }
 
 .greeting-block .greeting {
   max-width: 460px;
   margin-right: 46px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .greeting-block .greeting h2 {
@@ -143,6 +134,7 @@ body .brown-section header .navigation ul li .active {
   letter-spacing: 0em;
   color: #FFFFFF;
   padding-bottom: 42px;
+  padding-top: 164px;
   margin: 0;
 }
 
@@ -155,9 +147,25 @@ body .brown-section header .navigation ul li .active {
   text-align: left;
   color: #CDCDCD;
   padding-bottom: 42px;
+  margin: 0;
 }
 
-.greeting-block .greeting .main-button {
+.greeting-block .greeting .our-friend {
+  text-decoration: none;
+  color: #292929;
+}
+
+.greeting-block .greeting .our-friend .main-button {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: #F1CDB3;
   width: 207px;
   height: 52px;
@@ -171,7 +179,7 @@ body .brown-section header .navigation ul li .active {
   text-align: center;
 }
 
-.greeting-block .greeting .main-button:hover {
+.greeting-block .greeting .our-friend .main-button:hover {
   background-color: #FDDCC4;
   -webkit-transition: background-color 0.1s;
   transition: background-color 0.1s;
@@ -188,15 +196,16 @@ body .brown-section header .navigation ul li .active {
 }
 
 .white-section {
-  padding: 60px 40px 100px;
+  padding: 60px 40px 88px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   max-width: 1280px;
   margin: auto;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  margin-top: 8px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .white-section .about-pets-img {
@@ -204,11 +213,12 @@ body .brown-section header .navigation ul li .active {
   background-size: cover;
   width: 300px;
   height: 408px;
+  margin: 11px 60px 0 175px;
 }
 
 .white-section .about-pets-info {
-  width: 50%;
   max-width: 430px;
+  margin: 0 175px 0 60px;
 }
 
 .white-section .about-pets-info h3 {
@@ -221,6 +231,7 @@ body .brown-section header .navigation ul li .active {
   text-align: center;
   color: #545454;
   text-align: left;
+  margin: 27px 0 24px;
 }
 
 .white-section .about-pets-info p {
@@ -231,6 +242,7 @@ body .brown-section header .navigation ul li .active {
   line-height: 24px;
   letter-spacing: 0px;
   text-align: left;
+  margin: 25px 0;
 }
 
 .grey {
@@ -261,6 +273,7 @@ body .brown-section header .navigation ul li .active {
   text-align: center;
   color: #545454;
   text-align: center;
+  margin: 21px 0 60px;
 }
 
 .grey .grey-section .block-with-cards {
@@ -271,7 +284,7 @@ body .brown-section header .navigation ul li .active {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 0 105px 60px;
+  margin: 0 15px 60px;
 }
 
 .grey .grey-section .block-with-cards .card {
@@ -292,7 +305,7 @@ body .brown-section header .navigation ul li .active {
 .grey .grey-section .block-with-cards .card img {
   width: 270px;
   height: 270px;
-  padding: 0 auto 30px;
+  margin-bottom: 10px;
 }
 
 .grey .grey-section .block-with-cards .card .name {
@@ -303,7 +316,7 @@ body .brown-section header .navigation ul li .active {
   letter-spacing: 0.06em;
   text-align: center;
   color: #545454;
-  padding: 0 auto 30px;
+  margin-bottom: 30px;
 }
 
 .grey .grey-section .block-with-cards .card .button-more-info {
@@ -364,26 +377,31 @@ body .brown-section header .navigation ul li .active {
 }
 
 .grey .grey-section .block-with-cards .left {
-  bottom: 191px;
-  left: -81px;
+  bottom: 194px;
+  left: -15px;
 }
 
 .grey .grey-section .block-with-cards .right {
-  bottom: 191px;
-  right: -81px;
+  bottom: 194px;
+  right: -15px;
 }
 
 .grey .pets-link {
+  color: #292929;
+  text-decoration: none;
+  text-decoration: none;
+}
+
+.grey .pets-link .grey-section-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-decoration: none;
-}
-
-.grey .pets-link .grey-section-button {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #F1CDB3;
   border-radius: 50px;
   border: none;
@@ -434,12 +452,13 @@ body .brown-section header .navigation ul li .active {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 0 17px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 25px 0;
   -ms-flex-negative: 1;
       flex-shrink: 1;
+  margin-bottom: -56px;
 }
 
 .white-help-section .help-options .help-card {
@@ -478,7 +497,7 @@ body .brown-section header .navigation ul li .active {
 
 .grey-section-with-donation {
   background-color: #F6F6F6;
-  padding: 80px 182px 100px;
+  padding: 80px 182px 80px;
 }
 
 .grey-section-with-donation .grey-wraper {
@@ -495,6 +514,7 @@ body .brown-section header .navigation ul li .active {
 
 .grey-section-with-donation .grey-wraper .donation-image img {
   width: 505px;
+  margin: 10px 0 10px;
 }
 
 .grey-section-with-donation .grey-wraper .donation-info {
@@ -508,6 +528,7 @@ body .brown-section header .navigation ul li .active {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-right: 20px;
 }
 
 .grey-section-with-donation .grey-wraper .donation-info h3 {
@@ -612,10 +633,11 @@ body .brown-section header .navigation ul li .active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 60%;
+  width: 61%;
 }
 
 .footer .footer-wraper .footer-info .part {
+  margin-top: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -674,8 +696,8 @@ body .brown-section header .navigation ul li .active {
   color: #F1CDB3;
 }
 
-.footer .footer-wraper .footer-info .part .last-child {
-  margin-top: 32px;
+.footer .footer-wraper .footer-info .part .list.address, .footer .footer-wraper .footer-info .part .last-child {
+  margin-top: 33px;
 }
 
 .footer .footer-wraper .footer-image img {

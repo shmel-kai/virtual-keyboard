@@ -46,7 +46,7 @@ header .logo .logo-title {
   letter-spacing: 0.06em;
   text-align: left;
   color: #545454;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   margin-top: 0;
 }
 
@@ -81,7 +81,7 @@ header .navigation ul li a {
   letter-spacing: 0px;
   text-align: left;
   color: #545454;
-  margin-left: 35px;
+  margin-left: 36px;
   text-decoration: none;
   cursor: url(../../assets/icons/pointer.svg), pointer;
 }
@@ -102,7 +102,7 @@ header .navigation ul li .active {
 
 .grey .grey-section {
   background-color: #F6F6F6;
-  padding: 60px 40px 100px;
+  padding: 81px 40px 98px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,7 +159,7 @@ header .navigation ul li .active {
 .grey .grey-section .block-with-cards .card img {
   width: 270px;
   height: 270px;
-  padding: 0 auto 30px;
+  margin-bottom: 9px;
 }
 
 .grey .grey-section .block-with-cards .card .name {
@@ -183,7 +183,7 @@ header .navigation ul li .active {
   letter-spacing: 0.06em;
   border-radius: 50px;
   border: 2px solid #F1CDB3;
-  padding: 0 auto 30px;
+  margin-top: 10px;
   background: #FAFAFA;
   color: #292929;
 }
@@ -340,7 +340,7 @@ header .navigation ul li .active {
 }
 
 .footer {
-  background: linear-gradient(106deg, #745844 0%, #3e332d 19%, #21201f 76%, #232122 100%);
+  background: url(../../assets/images/bg.svg), linear-gradient(106deg, #745844 0%, #3e332d 30%, #21201f 90%, #232122 100%);
 }
 
 .footer .footer-wraper {
@@ -364,10 +364,11 @@ header .navigation ul li .active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 60%;
+  width: 61%;
 }
 
 .footer .footer-wraper .footer-info .part {
+  margin-top: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -426,8 +427,8 @@ header .navigation ul li .active {
   color: #F1CDB3;
 }
 
-.footer .footer-wraper .footer-info .part .last-child {
-  margin-top: 32px;
+.footer .footer-wraper .footer-info .part .list.address, .footer .footer-wraper .footer-info .part .last-child {
+  margin-top: 33px;
 }
 
 .footer .footer-wraper .footer-image img {

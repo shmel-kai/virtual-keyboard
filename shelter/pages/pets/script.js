@@ -16,7 +16,7 @@ const cardsContent = [
 cardsContent.forEach(function (card) {
     const div = document.createElement('div');
     div.className = 'card';
-    div.innerHTML = `<img src=${card[0]}><p class="name">${card[1]}</p><button class="button-more-info">Learn more</button> `
+    div.innerHTML = `<img src=${card[0]} alt="${card[1]}"><p class="name">${card[1]}</p><button class="button-more-info">Learn more</button> `
     // div.innerHTML = `<p>${icon[1]}</p>`
 
     blockWithCards.appendChild(div);
