@@ -1367,8 +1367,9 @@ body .brown-section header .navigation ul .burger-image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 61%;
 }
 
@@ -1539,12 +1540,12 @@ body .brown-section header .navigation ul .burger-image {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 62px;
   }
 }
 
 .footer .footer-wraper .footer-image img {
   width: 300px;
-  margin-top: 62px;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
