@@ -533,6 +533,7 @@ header {
 
                 @media (min-width: 320px) and (max-width: 767px){
                     margin: 17px 0 0;
+                    align-items: center;
 
                     &:last-child{
                         margin: 37px 0 0;
@@ -576,16 +577,14 @@ header {
                     }
 
                     .email-icon{
-                        margin-left: 24px;
 
                         @media (min-width: 768px) and (max-width: 1279px){
                             margin-right: 18px;
-                            margin-left: 0;
                         }
+
                     }
 
                     .phone-icon{
-                        margin-left: 30px;
 
                         @media (min-width: 768px) and (max-width: 1279px){
                             margin-right: 18px;
@@ -619,12 +618,19 @@ header {
                         margin-top: 39px;
                     }
                 }
+
+                .last-child{
+                    @media (min-width: 320px) and (max-width: 767px){
+                        margin-right: 27px;
+                    }
+                }
             }
 
             .part:last-child { 
                 @media (min-width: 768px) and (max-width: 1279px){
                     margin-right: 26px;
                 }
+
             }
             
         }

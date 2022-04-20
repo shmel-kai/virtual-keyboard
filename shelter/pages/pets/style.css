@@ -740,6 +740,9 @@ header .navigation ul .burger-image {
 @media (min-width: 320px) and (max-width: 767px) {
   .footer .footer-wraper .footer-info .part {
     margin: 17px 0 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .footer .footer-wraper .footer-info .part:last-child {
     margin: 37px 0 0;
@@ -794,19 +797,10 @@ header .navigation ul .burger-image {
   margin-right: 20px;
 }
 
-.footer .footer-wraper .footer-info .part .list .email-icon {
-  margin-left: 24px;
-}
-
 @media (min-width: 768px) and (max-width: 1279px) {
   .footer .footer-wraper .footer-info .part .list .email-icon {
     margin-right: 18px;
-    margin-left: 0;
   }
-}
-
-.footer .footer-wraper .footer-info .part .list .phone-icon {
-  margin-left: 30px;
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -844,6 +838,12 @@ header .navigation ul .burger-image {
 @media (min-width: 320px) and (max-width: 767px) {
   .footer .footer-wraper .footer-info .part .list.address, .footer .footer-wraper .footer-info .part .last-child {
     margin-top: 39px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .footer .footer-wraper .footer-info .part .last-child {
+    margin-right: 27px;
   }
 }
 
