@@ -1,5 +1,6 @@
 html {
   cursor: url(../../assets/icons/mouse.svg), auto;
+  scroll-behavior: smooth;
 }
 
 body {
