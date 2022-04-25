@@ -9,8 +9,13 @@
     <link rel="icon" type="image/x-icon" href="../../assets/icons/fav.png">
 </head>
 <body>
-
+    <svg class="burger-image" width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <line y1="21" x2="30" y2="21" stroke="black" stroke-width="2"/>
+        <line y1="11" x2="30" y2="11" stroke="black" stroke-width="2"/>
+        <line y1="1" x2="30" y2="1" stroke="black" stroke-width="2"/>
+    </svg> 
     <div class="header-wraper">
+        
         <header>
             <a href="../main/index.html"  class="logo">
                     <h1 class="logo-title">Cozy House</h1>
@@ -31,7 +36,12 @@
                     <li class="menu-item">
                         <a class="menu-item-link" href="#contacts">Contacts</a>
                     </li>
-                    <img class="burger-image" src="../../assets/icons/Burger-our-pets.png" alt="burger">
+             <!---- <svg class="burger-image" width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="21" x2="30" y2="21" stroke="black" stroke-width="2"/>
+                        <line y1="11" x2="30" y2="11" stroke="black" stroke-width="2"/>
+                        <line y1="1" x2="30" y2="1" stroke="black" stroke-width="2"/>
+                    </svg> -->
+                
                 </ul>
             </nav>
         </header>
@@ -43,7 +53,7 @@
                 <h1 class="logo-title">Cozy House</h1>
                 <span class="logo-subtitle">Shelter for pets in Boston</span>
             </a>
-            <img class="burger-image-open" src="../../assets/icons/Burger.png" alt="burger">
+            <span class="burger-image-open">
         </div>
 
 <!--navigation-->
@@ -76,14 +86,14 @@
             <div class="block-with-cards">
             </div>
             <div class="pagination-block">
-                <button class="double-arrow-left disabled">
+                <button class="double-arrow-left disabled" disabled>
                     <img src="../../assets/icons/doubleArrow.svg" alt="arrow">
                 </button>
-                <button class="single-arror-left disabled">
+                <button class="single-arrow-left disabled" disabled>
                     <img src="../../assets/icons/singleArrow.svg" alt="arrow">
                 </button>
                 <div class="counter">1</div>
-                <button class="single-arror-right active-hover">
+                <button class="single-arrow-right active-hover">
                     <img src="../../assets/icons/singleArrow.svg" alt="arrow">
                 </button>
                 <button class="double-arrow-right active-hover">
@@ -92,6 +102,48 @@
             </div>
         </section>
     </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-container">
+        <div class="popup">
+            <div class="close-icon">
+                <img src="../../assets/icons/close.png">
+            </div>
+            <img class="pets-image" src="../../assets/images/freddie.png">
+            <div class="info">
+                <h4 class="pets-name">
+                    Freddie
+                </h4>
+                <p class="type-breed">
+                    Cat - British Shorthair
+                </p>
+                <p class="description">
+                    Freddie is a little shy at first, but very sweet when he warms up. 
+                    He likes playing with shoe strings and bottle caps. He is quick to learn the rhythms 
+                    of his human’s daily life. Freddie has bounced around a lot in his life, and is looking 
+                    to find his forever home.
+                </p>
+                <ul>
+                    <li class="age">
+                        <span>Age</span>
+                        2 months
+                    </li>
+                    <li class="inoculations">
+                        <span>Inoculations</span>
+                        rabies
+                    </li>
+                    <li class="diseases">
+                        <span>Diseases</span>
+                        none
+                    </li>
+                    <li class="parasites">
+                        <span>Parasites</span>
+                        none
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 
     <footer id="contacts" class="footer">
         <div class="footer-wraper">
