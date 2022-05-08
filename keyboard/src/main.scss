@@ -1,0 +1,83 @@
+html {
+    background-color: rgb(236, 236, 236) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+}
+
+.root{
+    margin: auto;
+}
+
+.header{
+    text-transform: uppercase;
+    font-weight: 50px;
+    text-align: center;
+}
+
+.title{
+    text-align: center;
+}
+.textarea{
+    width: 1000px;
+}
+
+.keyboard-container{
+    margin-top: 10%;
+    width: auto;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 7px;
+
+    .row-container{
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        .button{
+            width: 60px;
+            height: 60px;
+            border-radius: 7px;
+            margin: 2px;
+
+            // &:hover{
+            //     background-color: rgb(230, 115, 226);
+            // }
+        }
+        .key-Tab{
+            width: 95px;
+        }
+        .key-Backspace{
+            width: 95px;
+        }
+        .key-CapsLock{
+            width: 110px;
+        }
+        .key-Enter{
+            width: 110px;
+        }
+        .key-Shift{
+            width: 123px;
+        }
+        .key- {
+            width: 355px;
+        }
+        .key-Cmnd{
+            width: 77px;
+        }
+        .key-←, .key-↓, .key-→, .key-↑{
+            background-color: orange;
+        }
+
+    }
+}
+
+.light{
+    background-color: palegreen;
+    transform: scale(0.95);
+}
