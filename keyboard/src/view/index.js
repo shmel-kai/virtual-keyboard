@@ -61,6 +61,7 @@ export const renderView = () => {
       const text = lang === 'ru' ? ru[item.key] : item.key;
       const key = new Element('button', `button key-${item.key}`, text || item.key);
       key.addAttribute('data-code', item.code);
+      key.addAttribute('type', 'button');
       key.appendTo(rowContainer);
     });
   });

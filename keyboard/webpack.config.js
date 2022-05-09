@@ -26,7 +26,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       favicon: path.resolve(__dirname, './src/keyboard.png'),
-      title: 'virtual keyboard',
+      title: 'Virtual Keyboard',
       template: path.resolve(__dirname, './src/template.html'), // шаблон
       filename: 'index.html', // название выходного файла
     }),

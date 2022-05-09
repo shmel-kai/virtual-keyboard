@@ -52,6 +52,7 @@ html {
             height: 60px;
             border-radius: 7px;
             margin: 2px;
+            transition: transform 0.5s;
 
              &:hover{
                  background-color: rgba(223, 195, 223, 0.671);
@@ -60,7 +61,7 @@ html {
 
         .button.light {
             background-color: rgb(228, 118, 224);
-            transform: scale(0.95);
+            transform: scale(0.925);
         }
 
         .key-Tab{
