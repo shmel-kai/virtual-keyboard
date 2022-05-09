@@ -261,8 +261,8 @@
             "key": "→"
         },
         {
-            "code": "AltRight",
-            "key": "Option"
+            "code": "Delete",
+            "key": "Del"
         }
     ]
 ]
