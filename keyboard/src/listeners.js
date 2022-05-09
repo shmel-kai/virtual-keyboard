@@ -29,9 +29,6 @@ const onKeyboardContainerClick = ({ target }) => {
   const textarea = document.querySelector('.textarea');
   addMouseUpDownListner();
 
-  // if (target.classList.contains('key-Shift')) {
-  //   onShiftPressed();
-  // } else
   if (target.classList.contains('key-CapsLock')) {
     onCapsStateChange();
   } else if (target.classList.contains('key-Tab')) {
@@ -69,6 +66,7 @@ const onKeyboardContainerClick = ({ target }) => {
 };
 
 const onKeyboardKeyDown = (event) => {
+  event.preventDefault();
   const textarea = document.querySelector('.textarea');
 
   cursorPosition = textarea.selectionStart;
@@ -89,6 +87,41 @@ const onKeyboardKeyDown = (event) => {
   if (event.key === 'Shift') {
     onShiftPressed();
   }
+
+  if (pressedButton.classList.contains('key-CapsLock')) {
+    onCapsStateChange();
+  } else if (pressedButton.classList.contains('key-Tab')) {
+    const array = [...textarea.value];
+    array.splice(cursorPosition, 0, '    ');
+    textarea.value = array.join('');
+    cursorPosition += 4;
+  } else if (pressedButton.classList.contains('key-Enter')) {
+    const array = [...textarea.value];
+    array.splice(cursorPosition, 0, '\n');
+    textarea.value = array.join('');
+    cursorPosition = textarea.value.length;
+  } else if (pressedButton.classList.contains('key-РУ/EN')) {
+    changeLang();
+  } else if (pressedButton.classList.contains('key-Backspace')) {
+    const array = [...textarea.value];
+    array.splice(cursorPosition - 1, 1);
+    textarea.value = array.join('');
+    cursorPosition -= 1;
+  } else if (pressedButton.classList.contains('key-Del')) {
+    const array = [...textarea.value];
+    array.splice(cursorPosition, 1);
+    textarea.value = array.join('');
+  } else if (pressedButton.classList.contains('button')
+    && !pressedButton.classList.contains('key-Alt')
+    && !pressedButton.classList.contains('key-Shift')
+    && !pressedButton.classList.contains('key-Control')
+    && !pressedButton.classList.contains('key-Option')
+    && !pressedButton.classList.contains('key-Cmnd')) {
+    const array = [...textarea.value];
+    array.splice(cursorPosition, 0, pressedButton.innerHTML);
+    textarea.value = array.join('');
+    cursorPosition += 1;
+  }
 };
 
 const onKeyboardKeyUp = (event) => {
@@ -96,7 +129,9 @@ const onKeyboardKeyUp = (event) => {
   const pressedButton = document.querySelector(`button[data-code="${codeOfPressedKey}"]`);
   pressedButton.classList.remove('light');
 
-  if (event.key === 'Shift') {
+  if (pressedButton.classList.contains('key-CapsLock')) {
+    onCapsStateChange();
+  } else if (event.key === 'Shift') {
     onShiftPressed();
   }
 };

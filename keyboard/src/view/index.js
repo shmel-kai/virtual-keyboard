@@ -92,9 +92,9 @@ export const onCapsStateChange = () => {
     element.forEach((item) => {
       const key = document.querySelector(`button[data-code="${item.code}"]`);
       if (active) {
-        key.innerHTML = item.key.length > 1 ? item.key : item.key.toUpperCase();
+        key.innerHTML = key.innerHTML.length > 1 ? key.innerHTML : key.innerHTML.toUpperCase();
       } else {
-        key.innerHTML = item.key.length > 1 ? item.key : item.key.toLowerCase();
+        key.innerHTML = key.innerHTML.length > 1 ? key.innerHTML : key.innerHTML.toLowerCase();
       }
     });
   });
